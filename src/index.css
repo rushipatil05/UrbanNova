@@ -3,6 +3,10 @@
 @tailwind utilities;
 @import "tailwindcss";
 
+body {
+  margin-left: 4%;
+  margin-right: 4%;
+}
 @keyframes shopping-item {
   0% {
     transform: translateX(-20vw);

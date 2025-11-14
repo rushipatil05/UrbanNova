@@ -41,53 +41,57 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-amber-50 via-orange-50 to-rose-50 relative">
-      <ShoppingAnimation />
+    <body className="min-h-screen bg-gradient-to-br from-amber-50 via-orange-50 to-rose-50 relative">
 
-      <div className="container mx-auto px-4 py-8 relative z-10">
-        <header className="mb-12 text-center">
-          <h1
-            className="text-5xl font-bold bg-gradient-to-r from-orange-600 to-rose-600 bg-clip-text text-transparent mb-3"
-            style={{ fontFamily: "Anton" }}
-          >
-            Urban Nova
-          </h1>
+      <div className="min-h-screen bg-gradient-to-br from-amber-50 via-orange-50 to-rose-50 relative">
+        <ShoppingAnimation />
 
-          <p className="text-gray-700 text-lg">Discover amazing products and start shopping</p>
-        </header>
+        <div className="container mx-auto px-4 py-8 relative z-10">
+          <header className="mb-12 text-center">
+            <h1
+              className="text-5xl font-bold bg-gradient-to-r from-orange-600 to-rose-600 bg-clip-text text-transparent mb-3"
+              style={{ fontFamily: "Anton" }}
+            >
+              Urban Nova
+            </h1>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          <div className="lg:col-span-2">
-            <CategoryFilter
-              categories={categories}
-              selectedCategory={selectedCategory}
-              onSelectCategory={setSelectedCategory}
-            />
+            <p className="text-gray-700 text-lg">Discover amazing products and start shopping</p>
+          </header>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {filteredProducts.map((product) => (
-                <ProductCard
-                  key={product.id}
-                  product={product}
-                  onAddToCart={handleAddToCart}
-                />
-              ))}
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div className="lg:col-span-2">
+              <CategoryFilter
+                categories={categories}
+                selectedCategory={selectedCategory}
+                onSelectCategory={setSelectedCategory}
+              />
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {filteredProducts.map((product) => (
+                  <ProductCard
+                    key={product.id}
+                    product={product}
+                    onAddToCart={handleAddToCart}
+                  />
+                ))}
+              </div>
+
+              {filteredProducts.length === 0 && (
+                <p className="text-center text-gray-500 py-12">
+                  No products found in this category
+                </p>
+              )}
             </div>
 
-            {filteredProducts.length === 0 && (
-              <p className="text-center text-gray-500 py-12">
-                No products found in this category
-              </p>
-            )}
-          </div>
+            <div className="lg:col-span-1">
+              <ShoppingCart cartItems={cartItems} onRemoveFromCart={handleRemoveFromCart} decrementCart={decrementFromCart} />
 
-          <div className="lg:col-span-1">
-            <ShoppingCart cartItems={cartItems} onRemoveFromCart={handleRemoveFromCart} decrementCart={decrementFromCart} />
-
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </body>
+
   );
 }
 
