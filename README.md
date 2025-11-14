@@ -2,6 +2,8 @@
 
 ![ReactJS](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![Cloudinary](https://img.shields.io/badge/Cloudinary-3448C5?style=for-the-badge&logo=cloudinary&logoColor=white)
+
 
 > Urban Nova is a clean and simple e-commerce web application built with **ReactJS** and **TailwindCSS**.  
 Users can browse products like electronics, books, and clothing, filter them by category, and add items to their shopping cart with ease.
@@ -15,7 +17,7 @@ Users can browse products like electronics, books, and clothing, filter them by 
 |------------ | ------------------------|
 | Frontend    | **ReactJS**             |
 | Styling     | **TailwindCSS**         |
-
+| Media CDN   | **Cloudinary**          |
 
 ---
 
