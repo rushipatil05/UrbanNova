@@ -1,16 +1,72 @@
-# React + Vite
+# URBAN NOVA
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![ReactJS](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![Cloudinary](https://img.shields.io/badge/Cloudinary-3448C5?style=for-the-badge&logo=cloudinary&logoColor=white)
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+> Urban Nova is a clean and simple e-commerce web application built with **ReactJS** and **TailwindCSS**.  
+Users can browse products like electronics, books, and clothing, filter them by category, and add items to their shopping cart with ease.
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+### 🚀 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+| Layer       | Technology              |
+|------------ | ------------------------|
+| Frontend    | **ReactJS**             |
+| Styling     | **TailwindCSS**         |
+| Media CDN   | **Cloudinary**          |
+
+---
+
+### 📁 Folder Structure (Simplified)
+
+```
+📦 urban-nova
+├── 📂 node_modules
+│
+├── 📂 public
+│ └── index.html
+│
+├── 📂 src
+│ ├── 📂 assets
+│ │ └── Logo.png
+│ │
+│ ├── 📂 components
+│ │ ├── CategoryFilter.jsx
+│ │ ├── ProductCard.jsx
+│ │ ├── ShoppingAnimation.jsx
+│ │ └── ShoppingCart.jsx
+│ │
+│ ├── 📂 data
+│ │ └── products.js
+│ │
+│ ├── App.jsx
+│ ├── index.css
+│ └── main.jsx
+│
+├── .gitignore
+├── index.html
+```
+---
+
+
+## 🛠️ Installation & Setup
+
+Follow these steps to run Urban Nova locally:
+
+1. **Clone the repository**
+   
+   ```bash
+   git clone https://github.com/rushipatil05/UrbanNova.git
+2. **Install dependencies**
+   
+   ```bash
+   npm install
+
+3. **Start the development server**
+   
+   ```bash
+   npm run dev
